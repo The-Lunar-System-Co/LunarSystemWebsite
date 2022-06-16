@@ -1,0 +1,64 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  pointer-events: none;
+}
+
+video {
+  display: block;
+}
+
+.footer {
+  position: relative;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 200px;
+  }
+  &__bg {
+    width: 100%;
+  }
+
+  &__social-icons {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      height: 40px;
+      width: 40px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      // box-shadow: 0px 0px 10px #85f5fd;
+    }
+
+    &__social-1 {
+      background-image: url("../../assets/images/icon-discord.png");
+    }
+
+    &__social-2 {
+      background-image: url("../../assets/images/icon-instagram.png");
+    }
+
+    &__social-3 {
+      background-image: url("../../assets/images/icon-twitter.png");
+    }
+
+    &__social-4 {
+      background-image: url("../../assets/images/icon-telegram.png");
+    }
+  }
+}

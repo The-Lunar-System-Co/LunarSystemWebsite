@@ -1,0 +1,20 @@
+.component-mobile-nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+
+  &__title {
+    color: white;
+    // font-family: Bosnia;
+    font-size: 16px;
+  }
+
+  &__coming-soon {
+    color: #4a4857;
+    font-size: 12px;
+  }
+}
