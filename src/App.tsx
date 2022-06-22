@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 // header
-// import Header from "./components/header";
+import Header from "./components/header";
 
 // main pages
 import LSD from "./pages/lsd";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
+        <Header />
         <Switch>
           {/* routes start */}
           <Route exact path="/">

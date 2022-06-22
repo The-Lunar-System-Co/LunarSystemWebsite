@@ -8,7 +8,8 @@ const Header = () => {
   return (
     <div className="component-header">
       <div className="component-header__left">
-        <DesktopNavItem to="/">Home</DesktopNavItem>
+        <DesktopNavItem to="https://www.battlepunkarena.com/" 
+          isHyperLink>Home</DesktopNavItem>
         <DesktopNavItem
           to="https://foundersmint.battlepunkarena.com/"
           isHyperLink
@@ -29,7 +30,7 @@ const Header = () => {
         </DesktopNavItem>
       </div>
       <div className="component-header__right">
-        <DesktopNavItem to="/lsd">$LSD</DesktopNavItem>
+        <DesktopNavItem to="/">$LSD</DesktopNavItem>
         <DesktopNavItem to="/" tooltip="Coming Very Soon">
           Punkon
         </DesktopNavItem>
@@ -54,7 +55,7 @@ const Header = () => {
         style={{ maxHeight: isMobileDropDownOpen ? "100vh" : "0px" }}
       >
         <div className="component-header__mobile-nav__logo">Menu</div>
-        <MobileNavItem to="/" setIsMobileDropDownOpen={setIsMobileDropDownOpen}>
+        <MobileNavItem to="https://www.battlepunkarena.com/" isHyperLink setIsMobileDropDownOpen={setIsMobileDropDownOpen}>
           Home
         </MobileNavItem>
         <MobileNavItem
@@ -66,7 +67,7 @@ const Header = () => {
         </MobileNavItem>
         <MobileNavItem
           isComingSoon
-          to="/punkydex"
+          to="/"
           setIsMobileDropDownOpen={setIsMobileDropDownOpen}
         >
           PunkyDex
@@ -86,7 +87,7 @@ const Header = () => {
           Play
         </MobileNavItem>
         <MobileNavItem
-          to="/lsd"
+          to="/"
           setIsMobileDropDownOpen={setIsMobileDropDownOpen}
         >
           $LSD

@@ -1,0 +1,120 @@
+.component-header {
+  background-image: url("../../assets/images/header-desktop-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 120px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 10%;
+  font-size: 14px;
+  // position: relative;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+
+  @media only screen and (min-width: 2000px) {
+    background-size: cover;
+    font-size: 2vh;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    height: 90px;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 90px;
+    background-image: url("../../assets/images/header-mobile-bg.png");
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__mobile-nav-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    &__bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 2px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      display: flex;
+      cursor: pointer;
+      &.active &__bar:nth-child(2) {
+        opacity: 0;
+      }
+      &.active &__bar:nth-child(1) {
+        -webkit-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+      }
+      &.active &__bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__mobile-nav {
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    overflow: scroll;
+    transition: 0.3s;
+    // background-image: url("../../assets/images/landing-page-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #110f23;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__logo {
+      font-size: 32px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      display: flex;
+    }
+
+    .component-mobile-nav-item {
+      border-bottom: 1px solid #281e37;
+    }
+
+    .component-mobile-nav-item:last-child {
+      border-bottom: none;
+    }
+  }
+}
