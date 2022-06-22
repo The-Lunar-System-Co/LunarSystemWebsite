@@ -8,8 +8,9 @@ const Header = () => {
   return (
     <div className="component-header">
       <div className="component-header__left">
-        <DesktopNavItem to="https://www.battlepunkarena.com/" 
-          isHyperLink>Home</DesktopNavItem>
+        <DesktopNavItem to="https://www.battlepunkarena.com/" isHyperLink>
+          Home
+        </DesktopNavItem>
         <DesktopNavItem
           to="https://foundersmint.battlepunkarena.com/"
           isHyperLink
@@ -55,7 +56,11 @@ const Header = () => {
         style={{ maxHeight: isMobileDropDownOpen ? "100vh" : "0px" }}
       >
         <div className="component-header__mobile-nav__logo">Menu</div>
-        <MobileNavItem to="https://www.battlepunkarena.com/" isHyperLink setIsMobileDropDownOpen={setIsMobileDropDownOpen}>
+        <MobileNavItem
+          to="https://www.battlepunkarena.com/"
+          isHyperLink
+          setIsMobileDropDownOpen={setIsMobileDropDownOpen}
+        >
           Home
         </MobileNavItem>
         <MobileNavItem
@@ -86,10 +91,7 @@ const Header = () => {
         >
           Play
         </MobileNavItem>
-        <MobileNavItem
-          to="/"
-          setIsMobileDropDownOpen={setIsMobileDropDownOpen}
-        >
+        <MobileNavItem to="/" setIsMobileDropDownOpen={setIsMobileDropDownOpen}>
           $LSD
         </MobileNavItem>
         <MobileNavItem
