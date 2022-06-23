@@ -134,7 +134,7 @@ const LSD = () => {
               </div>
               <div className="page-lsd__body__container__4__sale-price">
                 <div className="page-lsd__body__container__4__sale-price__value">
-                  $0.50
+                  $0.10
                 </div>
                 <div className="page-lsd__body__container__4__sale-price__title">
                   Public Sale Price
