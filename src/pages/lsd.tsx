@@ -74,9 +74,8 @@ const LSD = () => {
                   LSD is designed by The Lunar System Company as a powerful
                   utility token. Holders can utilize it to buy and sell digital
                   assets within the Lunar Ecosystem, as well as earning
-                  dividends in P2E Gameplay. Holders of Battlepunk NFT's can
-                  earn Lunar System Dollar passively through ingame farming and
-                  holder rewards.
+                  in B2E Tournaments. Holders of Battlepunk NFT's can
+                  earn Lunar System Dollar through holder rewards.
                 </div>
               </div>
               <div className="page-lsd__body__container__1__right">
