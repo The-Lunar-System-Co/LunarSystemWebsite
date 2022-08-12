@@ -53,7 +53,7 @@ const LSD = () => {
           </div>
 
           <div className="page-lsd__header__coin">
-            <img src={CoinImage} alt="page-lsd-header-coin" />
+            <img src={CoinImage} alt="page-LSD-header-coin" />
           </div>
         </div>
 
